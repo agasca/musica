@@ -1,0 +1,57 @@
+.box {
+	background-color: yellow;
+	width: 150px;
+	height: 150px;
+	/*transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	*/
+	/*
+	transition-property: width, height, background-color; 
+	transition-duration: 0.5s, 0.5s, 2s;
+	transition-timing-function: linear;
+	*/
+	/*
+	transition:
+		width 0.5s ease,
+		height 0.5s linear,
+		background-color 3s step(3, end);
+	*/
+	transition: all 0.5s ease;
+	transition-delay: 2s;
+}
+
+.box:hover {
+	width: 200px;
+	height: 200px;
+	background-color: green;
+}
+
+.caja {
+	width: 50px;
+	height: 50px;
+	background-color: grey;
+	
+}
+#caja0 { transform: skew(35deg); }
+#caja1 { transform: scale(1,0.5); }
+#caja2 { transform: rotate(45deg); }
+#caja3 { transform: translate(10px, 20px); }
+#caja4 { transform: skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px); }
+#caja5 { transition: all 2s ease-in-out;}
+#caja5:hover {transform:rotate(720deg) scale(3,3);}
+#caja6 {transition: all 2s ease-in-out;}
+#caja6:hover {transform:rotateX(180deg);}
+#caja7 {transition: all 2s ease-in-out;}
+#caja7:hover {transform:rotateY(180deg);}
+#caja8 {transition: all 2s ease-in-out;}
+#caja8:hover {transform:rotateZ(180deg);}
+#caja9 {
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	transition: all 2s ease-in-out;
+}
+#caja9:hover {
+	background-color: yellow;
+	-webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);}
